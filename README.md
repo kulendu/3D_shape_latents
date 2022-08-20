@@ -14,11 +14,15 @@ Dataset used here is a custom and refined dataset acquised from [Deepmind's repo
 
 ## Description:
 
+<img src='https://github.com/kulendu/3D_shape_latents/blob/master/images/3d_shapes.png' width=50%>
+
 The Dataset contains four types of 3D shapes: ***Cube, Cylinder, Spheroid,*** and ***Sphere***.
 
-|![](https://github.com/kulendu/3D_shape_latents/blob/master/images/cube.png)| ![](https://github.com/kulendu/3D_shape_latents/blob/master/images/cylinder.png)|![](https://github.com/kulendu/3D_shape_latents/blob/master/images/spheroid.png)|![](https://github.com/kulendu/3D_shape_latents/blob/master/images/sphere.png)|
+|![](https://github.com/kulendu/3D_shape_latents/blob/master/images/cube.gif)| ![](https://github.com/kulendu/3D_shape_latents/blob/master/images/cylinder.gif)|![](https://github.com/kulendu/3D_shape_latents/blob/master/images/shpreoid.gif)|![](https://github.com/kulendu/3D_shape_latents/blob/master/images/sphere.gif)|
 |:----:|:--------:|:--------:|:------:|
 | Cube | Cylinder | Spheroid | Sphere |
+
+
 
 These 3D shapes are generated 6 ground truth latent factors. These factors are ***floor colour, wall colour, object colour, scale, shape*** and ***orientation***. All of them are customizable and can be plotted acording to thier respective defined value-bounds.
 ### Latent factor values:
