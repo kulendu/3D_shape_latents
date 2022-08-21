@@ -67,3 +67,8 @@ The dataset is stored in a `HDF5` file, with the following fields/parameters:
 
 ### Downloading the dataset from Google Cloud Storage:
 The dataset can be downloaded from [here](https://console.cloud.google.com/storage/browser/3d-shapes;tab=objects?pli=1&prefix=&forceOnObjectsSortingFiltering=false)
+
+<hr>
+
+
+*The model tests on abstract objects can be found [here](https://github.com/kulendu/3D_shape_latents/blob/master/test.md).*
