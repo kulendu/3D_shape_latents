@@ -6,6 +6,16 @@ Photo credit: [Aleksei Vasileika](https://dribbble.com/shots/9533255-Endless-geo
 
 # Abstract:
 
+This project involved the idea of building a system/pipeline that detects four types of 3D shapes — Cube, Cylinder, Spheroid and Sphere in an image, and repository contains code files for preparing the base-line for Transfer Learning. MobileNet (V1) is taken into consideration as the baseline for the Network. **Reason for using MobileNet**: Since MobileNet provides a light weight infrastructure, and at the same time due to its streamlined architecture makes more parameters customizable and easy to host (if interested) on light wieight MCUs.
+
+## Mobilenet v1 — Base Model:
+MobileNets are based on a streamlined architecture that uses depth-wise separable convolutions to build light weight deep neural networks. The purpose behind using mobilenet for this use case is that, this project is intended to be deployed on mobile devices on the edge, hence making perfect sense to build a model based on a class of efficient models (MobileNets) that were pre-trained to suite deployment of Fine-Tuned DNN models for mobile and embedded vision applications.
+
+The following model parameters are considered and set as follows:
+- `IMAGE_SIZE` = 224 	# Image input size = H x W = 224 x 224
+- `ALPHA` = 0.75 	# α = Learning rate
+- `EPOCHS` = 20  
+
 # Training dataset:
 
 ![](https://github.com/deepmind/3d-shapes/raw/master/3dshapes.gif)
