@@ -11,10 +11,27 @@ This project involved the idea of building a system/pipeline that detects four t
 ## Mobilenet v1 — Base Model:
 MobileNets are based on a streamlined architecture that uses depth-wise separable convolutions to build light weight deep neural networks. The purpose behind using mobilenet for this use case is that, this project is intended to be deployed on mobile devices on the edge, hence making perfect sense to build a model based on a class of efficient models (MobileNets) that were pre-trained to suite deployment of Fine-Tuned DNN models for mobile and embedded vision applications.
 
+```py
+'''
+Parameters such as: layers, backend and models can be
+tweaked accordingly.
+'''
+
+# defining the base_line of the network
+base_model = MobileNet(input_shape = (IMAGE_SIZE, IMAGE_SIZE,3), alpha = ALPHA, 
+                     depth_multiplier = 1, dropout = 0.001, include_top = False, 
+                     weights = "imagenet", classes = 4, backend = keras.backend,
+                     layers = keras.layers, models = keras.models, utils = keras.utils)
+```
+
 The following model parameters are considered and set as follows:
-- `IMAGE_SIZE` = 224 	# Image input size = H x W = 224 x 224
-- `ALPHA` = 0.75 	# α = Learning rate
-- `EPOCHS` = 20  
+
+
+```py
+IMAGE_SIZE = 224      # Image input size = H x W = 224 x 224
+ALPHA = 0.75 	      # α = Learning rate
+EPOCHS = 20 
+```
 
 # Training dataset:
 
